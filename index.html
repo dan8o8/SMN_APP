@@ -13,48 +13,58 @@
 </head>
 
 <body>
-    <header data-role="header">
-        <h1>S.M.N</h1>
-    </header>
+    <div data-role="page" id="main_area">
+        <header data-role="header">
+            <h1>S.M.N</h1>
+        </header>
 
-    <div data-role="main" class="ui-content">
-        <p>Search</p>
-        <a href="#" class="search_btn">
-             <img src="assets/images/search_icon.png">
-         </a>
-    </div>
-
-     <div data-role="footer" class="footer">
-         <a href="#" class="nav_btn">
-             <img src="assets/images/search_icon.png">
-             <label>Search</label>
-         </a>
-         <a href="#profile" class="nav_btn">
-              <img src="assets/images/profile_icon.png">
-             <label>Profile</label>
-         </a>
-         <a href="#" class="nav_btn">
-             <img src="assets/images/chat_icon.png">
-             <label>Chat</label>
-         </a>
-         <a href="#" class="nav_btn">
-            <img src="assets/images/settings_icon.png">
-            <label>Settings</label>
-         </a>
-    </div>
-
-    <div data-role="page" data-dialog="true" id="profile" data-transition="slideup">
-        <div data-role="header">
-            <h1>I'm A Dialog Box!</h1>
+        <div data-role="main" id="">
+            <a href="#" class="search_btn">
+                <img src="assets/images/binoc_icon.png">
+            </a>
         </div>
 
-        <div data-role="main" class="ui-content">
+        <div data-role="footer" class="footer_div" data-position="fixed">
+            <a href="#" class="nav_btn" data-transition="slidedown">
+                <img src="assets/images/search_icon.png">
+                <label>Search</label>
+            </a>
+            <a href="#profile-dialog" class="nav_btn" data-transition="slidedown">
+                <img src="assets/images/profile_icon.png">
+                <label>Profile</label>
+            </a>
+            <a href="#" class="nav_btn" data-transition="slidedown">
+                <img src="assets/images/chat_icon.png">
+                <label>Chat</label>
+            </a>
+            <a href="#" class="nav_btn" data-transition="slidedown">
+                <img src="assets/images/settings_icon.png">
+                <label>Settings</label>
+            </a>
+        </div>
+    </div>
+    
+
+    <div data-role="page" data-dialog="true" id="profile-dialog">
+        <div data-role="header" data-icon="false">
+            <h1>My Profile</h1>
+        </div>
+
+        <div data-role="main">
             <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
-            <a href="#">Close</a>
+        </div>
+
+        <div data-role="header">
+            <h1>Looking For</h1>
+        </div>
+
+        <div data-role="main">
+            <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
         </div>
 
         <div data-role="footer">
-            <h1>Footer Text In Dialog</h1>
+            <a href="#" class="ui-btn ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-right" data-rel="back">Close</a>
+            <h1> </h1>
         </div>
     </div>
 

@@ -2,19 +2,28 @@
 
 }
 
-.ui-content{
-    width:auto;
-    height:auto;
+#main_area{
+    background-color:#b5dedd;
+}
+
+.profile-dialog{
     background-color:#b5dedd;
 }
 
 .contentWindow{
-    height: 50vh;
-    width: 50vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nav_btn{
 
+}
+
+h1.profile-dialog{
+    text-align: left;
+}
+
+.footer_div{
+    position: fixed; 
+    bottom: 0;
 }
