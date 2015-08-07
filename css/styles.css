@@ -4,6 +4,15 @@
 
 #main_area{
     background-color:#b5dedd;
+    margin: 0 auto;
+}
+
+#bottom-close-button{
+    padding: 10px;
+}
+
+.centre_area{
+
 }
 
 .profile-dialog{
