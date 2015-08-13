@@ -7,13 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/themes/smn-custom-theme.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-    <div data-role="page" id="main_area">
+    <div data-role="page" id="main_area" data-add-back-btn="true">
         <header data-role="header">
             <h1>S.M.N</h1>
         </header>
@@ -24,22 +28,33 @@
             </div>  
         </div>
 
-        <div data-role="footer" class="footer_div" data-position="fixed">
-            <a href="#search-dialog" class="nav_btn" data-transition="slidedown">
-                <img src="assets/images/search_icon.png">
-            </a>
-            <a href="#profile-dialog" class="nav_btn" data-transition="slidedown">
-                <img src="assets/images/profile_icon.png">
-            </a>
-            <a href="#chat-dialog" class="nav_btn" data-transition="slidedown">
-                <img src="assets/images/chat_icon.png">
-            </a>
-            <a href="#settings-dialog" class="nav_btn" data-transition="slidedown">
-                <img src="assets/images/settings_icon.png">
-            </a>
-        </div>
+        <footer data-role="footer" data-position="fixed">
+            <nav data-role="navbar" data-icon-shadow="false">
+                <ul>
+                    <li>
+                        <a href="#profile-dialog" data-theme="" id="profile-icon" data-iconpos="notext" data-transition="slidedown">
+                            <img src="assets/images/profile_icon.png" width="32" height="32">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#search-dialog" data-theme="" id="search-icon" data-iconpos="notext" data-transition="slidedown">
+                            <img src="assets/images/search_icon.png" width="32" height="32">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#chat-dialog" data-theme="" id="chat-icon" data-iconpos="notext" data-transition="slidedown">
+                            <img src="assets/images/chat_icon.png" width="32" height="32">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#settings-dialog" data-theme="" id="settings-icon" data-iconpos="notext" data-transition="slidedown">
+                            <img src="assets/images/settings_icon.png" width="32" height="32">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </div>
-    
 
     <div data-role="page" data-dialog="true" id="search-dialog">
         <div data-role="header" data-icon="false">
@@ -62,7 +77,13 @@
         </div>
 
         <div data-role="main">
-            <p>The dialog box is different from a normal page, it is displayed on top of the current page and it will not span the entire width of the page. The dialog has also an icon of "X" in the header to close the box.</p>
+            <input type="text" placeholder="About Me"/> 
+            <fieldset data-role="controlgroup">
+                <legend>I am</legend>
+                <label for="radio1">Male</label><input type="radio" id="radio1" name="radios"/>
+                <label for="radio2">Female</label><input type="radio" id="radio2" name="radios"/>
+                <label for="radio3">Other</label><input type="radio" id="radio3" name="radios"/>
+            </fieldset>
         </div>
 
         <div data-role="header">
